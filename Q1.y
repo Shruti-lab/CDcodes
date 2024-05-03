@@ -3,6 +3,17 @@
 #include <stdlib.h>
 #include <string.h>
 extern char* yytext;
+void yyerror(char*);
+int yylex(void);
+void codegen();
+void push();
+void codegen_array();
+void codegen_umin();
+void codegen_assign();
+void codegen_less();
+void lab1();
+void lab2();
+void lab3();
 %}
 
 %token ID NUM IF ELSE THEN

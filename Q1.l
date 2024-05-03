@@ -20,3 +20,6 @@ void yyerror(char *s)
 { fprintf(stderr, "Invalid input %s\n", s); }
 
 
+int yywrap(){
+    return 1;
+}

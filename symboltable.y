@@ -106,6 +106,7 @@ return: RETURN { add('K'); } value ';'
 %%
 
 int main() {
+	printf("Enter input:- \n");
   yyparse();
   printf("\n\n");
 	printf("\t\t\t\t\t\t\t\t PHASE 1: LEXICAL ANALYSIS \n\n");

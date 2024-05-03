@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+void printable();
 
 struct Symbol {
 	char lexeme[50];
@@ -44,6 +45,8 @@ int numBlank=0;
 
 %%
 
+"exit"		{printable();}
+
 int|float|main|void|printf|return	{ addSymbol(yytext, "Reserved", -1.0); 
 					numWord++;
 					numChar += yyleng;}
@@ -64,11 +67,17 @@ int|float|main|void|printf|return	{ addSymbol(yytext, "Reserved", -1.0);
 			numBlank += yyleng; }
 .				;
 
+
 %%
 
 int main(void) {
+	printf("Enter expression:- \n");
   yylex();
-  printf("Symbol Table\n------------------------------\n");
+  return 0;
+}
+
+void printable(){
+	printf("Symbol Table\n------------------------------\n");
   printf("Lexeme\tType\t\tValue\n");
   for (int i = 0; i < symbol_table.num_entries; i++) {
     printf("%s\t%s\t", symbol_table.entries[i].lexeme, symbol_table.entries[i].type);
@@ -81,7 +90,6 @@ int main(void) {
   printf("\nNo. of characters = %d", numChar);
   printf("\nNo. of words = %d", numWord);
   printf("\nNo. of blank characters = %d\n", numBlank);
-  return 0;
 }
 
 

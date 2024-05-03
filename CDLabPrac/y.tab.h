@@ -39,27 +39,21 @@
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     FOR = 258,
-     ID = 259,
-     BOP = 260,
-     UOP = 261,
-     NUMBER = 262,
-     DO = 263,
-     WHILE = 264,
-     IF = 265,
-     ELSE = 266
+     EQUAL = 258,
+     INT = 259,
+     REAL = 260,
+     INTEGER = 261,
+     ID = 262,
+     NUM = 263
    };
 #endif
 /* Tokens.  */
-#define FOR 258
-#define ID 259
-#define BOP 260
-#define UOP 261
-#define NUMBER 262
-#define DO 263
-#define WHILE 264
-#define IF 265
-#define ELSE 266
+#define EQUAL 258
+#define INT 259
+#define REAL 260
+#define INTEGER 261
+#define ID 262
+#define NUM 263
 
 
 

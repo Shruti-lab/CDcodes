@@ -83,3 +83,8 @@ int main(void) {
   printf("\nNo. of blank characters = %d\n", numBlank);
   return 0;
 }
+
+
+int yywrap(){
+	return 1;
+}

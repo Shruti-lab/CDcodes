@@ -282,32 +282,33 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 	*yy_cp = '\0'; \
 	yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 8
-#define YY_END_OF_BUFFER 9
-static yyconst short int yy_accept[38] =
+#define YY_NUM_RULES 5
+#define YY_END_OF_BUFFER 6
+static yyconst short int yy_accept[44] =
     {   0,
-        0,    0,    9,    7,    6,    6,    2,    7,    4,    5,
-        5,    5,    5,    5,    5,    5,    3,    4,    5,    5,
-        5,    5,    5,    5,    5,    5,    1,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    0
+        0,    0,    6,    5,    3,    4,    2,    2,    4,    4,
+        2,    2,    4,    2,    0,    3,    0,    4,    2,    2,
+        4,    0,    1,    2,    2,    0,    3,    3,    0,    3,
+        0,    0,    4,    2,    0,    0,    3,    0,    0,    0,
+        0,    0,    0
     } ;
 
 static yyconst int yy_ec[256] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    2,    1,    4,    1,    1,    5,    1,    1,    6,
-        7,    1,    8,    9,    1,    1,    1,   10,   10,   10,
-       10,   10,   10,   10,   10,   10,   10,    1,   11,    1,
-       12,    1,    1,    1,   13,   13,   13,   13,   13,   13,
-       13,   13,   13,   13,   13,   13,   13,   13,   13,   13,
-       13,   13,   13,   13,   13,   13,   13,   13,   13,   13,
-        1,    1,    1,    1,    1,    1,   14,   13,   13,   15,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    3,    1,    3,    1,    1,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    1,    1,    1,
+        1,    1,    1,    1,    5,    5,    5,    5,    6,    5,
+        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
+        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
+        1,    1,    1,    1,    1,    1,    7,    5,    5,    8,
 
-       16,   17,   13,   13,   18,   13,   13,   19,   20,   21,
-       22,   23,   13,   24,   13,   25,   26,   27,   13,   13,
-       13,   13,   28,    1,   29,    1,    1,    1,    1,    1,
+        9,   10,   11,   12,   13,    5,    5,   14,    5,   15,
+       16,   17,    5,   18,   19,   20,   21,    5,   22,    5,
+        5,    5,   23,   24,   23,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -324,53 +325,61 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst int yy_meta[30] =
+static yyconst int yy_meta[25] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
-        1,    1,    2,    2,    2,    2,    2,    2,    2,    2,
-        2,    2,    2,    2,    2,    2,    2,    1,    1
+        1,    2,    1,    1,    1,    1,    3,    4,    5,    1,
+        4,    1,    4,    4,    1,    3,    3,    5,    1,    5,
+        1,    1,    5,    4
     } ;
 
-static yyconst short int yy_base[39] =
+static yyconst short int yy_base[47] =
     {   0,
-        0,    0,   56,   57,   57,   57,   57,   40,   44,    0,
-       34,   31,   37,   26,   33,   26,   57,   37,    0,   24,
-       20,   26,   25,   17,   23,   26,    0,   18,   17,   11,
-       21,   10,    9,    9,   15,   10,   57,   28
+        0,    0,   83,   84,   21,    0,   21,   68,   65,   70,
+       61,   69,   65,    0,   72,   27,   39,    0,    0,    0,
+       56,   54,   84,   60,   52,   58,   42,   43,   66,   46,
+       60,   52,   52,   45,   51,   50,   59,   36,   33,   31,
+       26,   11,   84,   54,   56,   59
     } ;
 
-static yyconst short int yy_def[39] =
+static yyconst short int yy_def[47] =
     {   0,
-       37,    1,   37,   37,   37,   37,   37,   37,   37,   38,
-       38,   38,   38,   38,   38,   38,   37,   37,   38,   38,
-       38,   38,   38,   38,   38,   38,   38,   38,   38,   38,
-       38,   38,   38,   38,   38,   38,    0,   37
+       43,    1,   43,   43,   44,   45,   43,    7,   45,   45,
+        7,    7,   45,   46,   43,   44,   43,   45,   46,    7,
+       45,   43,   43,    7,    7,   43,   43,   44,   43,   43,
+       43,   43,   45,    7,   43,   43,   43,   43,   43,   43,
+       43,   43,    0,   43,   43,   43
     } ;
 
-static yyconst short int yy_nxt[87] =
+static yyconst short int yy_nxt[109] =
     {   0,
-        4,    5,    6,    7,    8,    7,    7,    7,    7,    9,
-        7,    7,   10,   10,   10,   10,   11,   12,   10,   13,
-       10,   10,   14,   15,   10,   10,   16,    7,    7,   19,
-       27,   27,   36,   35,   27,   27,   34,   33,   27,   32,
-       31,   30,   29,   28,   27,   26,   18,   25,   24,   23,
-       22,   21,   20,   18,   17,   37,    3,   37,   37,   37,
-       37,   37,   37,   37,   37,   37,   37,   37,   37,   37,
-       37,   37,   37,   37,   37,   37,   37,   37,   37,   37,
-       37,   37,   37,   37,   37,   37
+        4,    4,    4,    5,    6,    6,    7,    6,    8,    6,
+        9,    6,   10,    6,    6,    7,   11,   12,    6,    7,
+        6,   13,   14,    4,   16,   23,   17,   19,   18,   20,
+       28,   18,   17,   18,   18,   23,   19,   19,   20,   23,
+       20,   29,   30,   20,   18,   27,   28,   36,   17,   30,
+       42,   36,   29,   37,   15,   41,   15,   15,   15,   18,
+       18,   19,   37,   19,   40,   39,   38,   23,   23,   37,
+       35,   34,   33,   32,   31,   27,   26,   25,   24,   23,
+       22,   21,   43,    3,   43,   43,   43,   43,   43,   43,
+       43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
+
+       43,   43,   43,   43,   43,   43,   43,   43
     } ;
 
-static yyconst short int yy_chk[87] =
+static yyconst short int yy_chk[109] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,   38,
-       36,   35,   34,   33,   32,   31,   30,   29,   28,   26,
-       25,   24,   23,   22,   21,   20,   18,   16,   15,   14,
-       13,   12,   11,    9,    8,    3,   37,   37,   37,   37,
-       37,   37,   37,   37,   37,   37,   37,   37,   37,   37,
-       37,   37,   37,   37,   37,   37,   37,   37,   37,   37,
-       37,   37,   37,   37,   37,   37
+        1,    1,    1,    1,    5,   42,    5,    7,    7,    7,
+       16,    7,   16,    7,    7,   41,    7,    7,    7,   40,
+        7,   17,   17,    7,    7,   27,   28,   27,   28,   30,
+       39,   30,   36,   36,   44,   38,   44,   44,   44,   45,
+       45,   46,   37,   46,   35,   34,   33,   32,   31,   29,
+       26,   25,   24,   22,   21,   15,   13,   12,   11,   10,
+        9,    8,    3,   43,   43,   43,   43,   43,   43,   43,
+       43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
+
+       43,   43,   43,   43,   43,   43,   43,   43
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -384,51 +393,13 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "Q2lex.l"
+#line 1 "keywordsIdentifiers.l"
 #define INITIAL 0
-#line 2 "Q2lex.l"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-struct Symbol {
-	char lexeme[50];
-	char type[20];
-	int value;
-};
-
-struct SymbolTable {
-	struct Symbol entries[1000];
-	int num_entries;
-};
-
-struct SymbolTable symbol_table;
-
-void addSymbol(char* name, char* type, int value)
-{
-	if(symbol_table.num_entries <1000)
-	{
-		int i =0;
-		for(i=0; i<symbol_table.num_entries; i++)
-		{
-			if(strcmp(symbol_table.entries[i].lexeme, name) == 0)
-				break;
-		}
-		if(i==symbol_table.num_entries)
-		{
-		    strcpy(symbol_table.entries[symbol_table.num_entries].lexeme, name);
-		strcpy(symbol_table.entries[symbol_table.num_entries].type, type);
-	    	symbol_table.entries[symbol_table.num_entries].value = value;
-		symbol_table.num_entries++;
-		}
-	}
-}
-
-int numChar=0;
-int numWord=0;
-int numBlank=0;
-
-#line 432 "lex.yy.c"
+/*Identify following tokens "if,else,scanf,printf,return,goto,while and identifiers"*/
+#line 4 "keywordsIdentifiers.l"
+    #include<stdio.h>
+    int keyword=0, identifier = 0, numbers=0, operators=0;
+#line 403 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -579,10 +550,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 45 "Q2lex.l"
+#line 14 "keywordsIdentifiers.l"
 
-
-#line 586 "lex.yy.c"
+#line 556 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -633,13 +603,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 38 )
+				if ( yy_current_state >= 44 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 57 );
+		while ( yy_base[yy_current_state] != 84 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -667,53 +637,30 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 47 "Q2lex.l"
-{ addSymbol(yytext, "Reserved", -1.0); 
-					numWord++;
-					numChar += yyleng;}
+#line 15 "keywordsIdentifiers.l"
+{keyword++;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 51 "Q2lex.l"
-{ addSymbol(yytext, "Delimiter", -1.0); 
-					numChar += yyleng;}
+#line 16 "keywordsIdentifiers.l"
+{operators++;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 54 "Q2lex.l"
-{ addSymbol(yytext,"FSpecifier", -1.0); 
-					numChar += yyleng;}
+#line 17 "keywordsIdentifiers.l"
+numbers++;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 57 "Q2lex.l"
-{ addSymbol(yytext, "Constant", atoi(yytext)); 
-				numChar += yyleng;}
+#line 18 "keywordsIdentifiers.l"
+identifier++;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 60 "Q2lex.l"
-{ addSymbol(yytext, "Identifier", -1.0);
-			numWord++;
-			numChar += yyleng; }
-	YY_BREAK
-case 6:
-YY_RULE_SETUP
-#line 63 "Q2lex.l"
-{ numChar += yyleng;
-			numBlank += yyleng; }
-	YY_BREAK
-case 7:
-YY_RULE_SETUP
-#line 65 "Q2lex.l"
-;
-	YY_BREAK
-case 8:
-YY_RULE_SETUP
-#line 67 "Q2lex.l"
+#line 19 "keywordsIdentifiers.l"
 ECHO;
 	YY_BREAK
-#line 717 "lex.yy.c"
+#line 664 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1005,7 +952,7 @@ static yy_state_type yy_get_previous_state()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 38 )
+			if ( yy_current_state >= 44 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -1040,11 +987,11 @@ yy_state_type yy_current_state;
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 38 )
+		if ( yy_current_state >= 44 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 37);
+	yy_is_jam = (yy_current_state == 43);
 
 	return yy_is_jam ? 0 : yy_current_state;
 	}
@@ -1599,28 +1546,21 @@ int main()
 	return 0;
 	}
 #endif
-#line 67 "Q2lex.l"
+#line 19 "keywordsIdentifiers.l"
 
 
-int main(void) {
-  yylex();
-  printf("Symbol Table\n------------------------------\n");
-  printf("Lexeme\tType\t\tValue\n");
-  for (int i = 0; i < symbol_table.num_entries; i++) {
-    printf("%s\t%s\t", symbol_table.entries[i].lexeme, symbol_table.entries[i].type);
-	if(symbol_table.entries[i].value != -1.0)
-	    printf("%d\n", symbol_table.entries[i].value);
-	else
-	    printf("-\n");
-  }
-  
-  printf("\nNo. of characters = %d", numChar);
-  printf("\nNo. of words = %d", numWord);
-  printf("\nNo. of blank characters = %d\n", numBlank);
-  return 0;
-}
-
-
-int yywrap(){
-	return 1;
+int yywrap(){return(1);}
+int main(int argc, char* argv[]){
+    if(argc==2){
+        yyin = fopen(argv[1],"r");
+    }else{
+        printf("Enter the input here: ");
+        yyin = stdin;
+    }
+    yylex();
+    printf("\nNumber of identifiers = %d",identifier);
+    printf("\nNumber of keywords = %d",keyword);
+    printf("\nNumber of operators = %d",operators);
+    printf("\nNumber of numbers = %d",numbers);
+    return 0;
 }

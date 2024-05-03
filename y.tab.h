@@ -40,20 +40,18 @@
       know about them.  */
    enum yytokentype {
      ID = 258,
-     NUM = 259,
-     IF = 260,
-     ELSE = 261,
-     THEN = 262,
-     UMINUS = 263
+     LT = 259,
+     GT = 260,
+     AND = 261,
+     OR = 262
    };
 #endif
 /* Tokens.  */
 #define ID 258
-#define NUM 259
-#define IF 260
-#define ELSE 261
-#define THEN 262
-#define UMINUS 263
+#define LT 259
+#define GT 260
+#define AND 261
+#define OR 262
 
 
 

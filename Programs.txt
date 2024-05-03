@@ -1,0 +1,51 @@
+IMPORTANT INSTRUCTIONS TO RUN LEX PROGRAM IN WINDOWS 10 AND POWERSHELL
+COMMANDS TO TYPE IN POWERSHELL:-
+1) flex filename.l
+2) gcc lex.yy.c
+3) .\a.exe
+
+IMPORTANT INSTRUCTIONS TO RUN LEX PROGRAM IN WINDOWS 10 AND POWERSHELL
+COMMANDS TO TYPE IN POWERSHELL:-
+1) flex filename.l
+2) bison -dy filename.y
+2) gcc lex.yy.c y.tab.c
+3) .\a.exe
+
+Then the program runs.... Good!
+
+https://docs.oracle.com/cd/E19504-01/802-5880/lex-6/index.html
+https://www.geeksforgeeks.org/flex-fast-lexical-analyzer-generator/
+https://www.codingninjas.com/studio/library/lexical-analysis-in-compiler-design
+
+
+
+/*lex program to check number is odd or even*/
+/*lex program to count number of identifiers*/
+/*lex code to accept a valid integer and float value using lex program.*/
+/*lex program to count number of comment lines*/
+/*lex program to count number of characters, blank spaces, tabs, lines in given text document*/
+/*Identify following tokens "if,else,scanf,printf,return,goto,while and identifiers"*/
+/*lex code to accept data from input file and copy to output file*/
+/*make symbol table lexeme token value and it's address*/
+/*write yacc program to give intermediate code for "a=b+c*d" (secondlastlab.l secondlastlab.y  =>3 address code)
+/* write yacc program for "while" loop  - in general for loops too
+/* write internediate code for booleans
+/*Assignment operator yacc 
+
+yyerror(char *s)
+{
+printf("%s\n",s);
+}
+
+yacc programs 
+
+
+//yylex -> takes input from cmd(takes user input)
+
+.\a.exe   filename.l
+  0         1
+
+. {c++}
+
+
+https://github.com/TheNilesh/lex-yacc/blob/master/loops.y

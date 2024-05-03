@@ -1,0 +1,8 @@
+//yeh single line comment hai
+/*aur ye multiline comment.
+see 
+hfdujv
+efdsvf grefd
+fedvc*/
+/*gfd refdvjh jkred*/
+/*gfd refdvjh jkred*/
